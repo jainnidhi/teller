@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.8.1
-Version: 1.0.0
+Version: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,5 +47,8 @@ source: http://fortawesome.github.io/Font-Awesome
 
 == Changelog ==
 
-= 1.0  =
+= 1.0.1 =
+* Fixed issues using NS theme check plugin
+
+= 1.0.0 =
 * Initial release
