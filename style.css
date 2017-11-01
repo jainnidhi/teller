@@ -1046,19 +1046,28 @@ object {
     float: left;
     margin-right: 20px;
 }
+
 .site-title {
     font-size: 32px;
     text-transform: capitalize;
-    line-height: 1;
+    line-height: 1.5;
 	margin-top: 0;
+	font-weight: 600;
 }
+
+.site-title a {
+	transition: color 0.5s ease;
+}
+
 .site-title a:visited {
     color: #d14545;
     text-decoration: none;
 }
+
 .site-title a:hover {
     color: #666;
 }
+
 .two-thirds a {
     color: #999;
     border-bottom: 1px solid #666;
@@ -1068,15 +1077,46 @@ object {
     font-weight: 400;
 	margin-bottom: 0;
 }
+
+.menu {
+	 position: relative;
+	 top: 1em;
+}
+
 .menu a {
     color: #282828;
     font-size: 15px;
-    font-weight: 400;
-    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: uppercase;
+	transition:  all;
+}
+
+.menu > li::after {
+  background-color: #d14545;
+  bottom: 0;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  width: 100%;
+}
+
+.menu > li:hover::after,
+.menu > li::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.menu > li::after {
+  content: '';
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .menu .current_page_item {
-    /*background: url(images/border-bottom.png);*/
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -1114,6 +1154,7 @@ body {
 }
 .entry-content p {
     margin-top:0;
+    margin-left: 4px;
 }
 .site-header {
     background-color: #fff;
